@@ -14,6 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * calculateHanoi(9, 4308) => { turns: 511, seconds: 427 }
  *
  */
+//  Количество перекладываний в зависимости от количества колец вычисляется по формуле 2^{n}-1
 function calculateHanoi( disksNumber, turnsSpeed) {
   return {
     turns: ( 2 ** disksNumber) - 1,
